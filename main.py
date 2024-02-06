@@ -1,8 +1,14 @@
 import json
+import logging
 from pathlib import Path
+
+from utils.logging import setup_logging
+
+logger = logging.getLogger("Testing")
 
 
 def main() -> None:
+    setup_logging(config_data["logger"])
     print("Hello, World!")
 
 
