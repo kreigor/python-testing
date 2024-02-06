@@ -9,7 +9,7 @@ logger = logging.getLogger("Testing")
 
 def main() -> None:
     setup_logging(config_data["logger"])
-    print("Hello, World!")
+    logger.info("Hello, World!")
 
 
 # Load Config
