@@ -21,12 +21,14 @@ def main() -> None:
         args = parser.parse_args()
 
         if args.debug:
-            logger.debug(f"Args: {args}",
-                         extra={
-                             "debug": f"{args.debug}",
-                             "quiet": f"{args.quiet}",
-                             "skip": f"{args.skip}"
-                         })
+            logger.debug(
+                f"Args: {args}",
+                extra={
+                    "debug": f"{args.debug}",
+                    "quiet": f"{args.quiet}",
+                    "skip": f"{args.skip}",
+                },
+            )
 
 
 # Load Config
