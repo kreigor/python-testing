@@ -24,9 +24,9 @@ def main() -> None:
             logger.debug(
                 f"Args: {args}",
                 extra={
-                    "debug": f"{args.debug}",
-                    "quiet": f"{args.quiet}",
-                    "skip": f"{args.skip}",
+                    "debug": args.debug,
+                    "quiet": args.quiet,
+                    "skip": args.skip,
                 },
             )
 
